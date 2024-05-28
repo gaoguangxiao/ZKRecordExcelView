@@ -1,0 +1,57 @@
+PODS:
+  - GGXSwiftExtension (0.5.7)
+  - KeychainAccess (4.2.2)
+  - PKHUD (5.3.0)
+  - ReachabilitySwift (5.2.3)
+  - RxCocoa (6.7.1):
+    - RxRelay (= 6.7.1)
+    - RxSwift (= 6.7.1)
+  - RxRelay (6.7.1):
+    - RxSwift (= 6.7.1)
+  - RxSwift (6.7.1)
+  - SnapKit (5.7.1)
+  - ZKBaseSwiftProject (1.0.0):
+    - GGXSwiftExtension
+    - KeychainAccess
+    - PKHUD
+    - ReachabilitySwift
+    - RxCocoa
+    - RxSwift
+    - SnapKit
+  - ZKRecordExcelView (0.1.0):
+    - ZKBaseSwiftProject
+
+DEPENDENCIES:
+  - ZKRecordExcelView (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - GGXSwiftExtension
+    - KeychainAccess
+    - PKHUD
+    - ReachabilitySwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - ZKBaseSwiftProject
+
+EXTERNAL SOURCES:
+  ZKRecordExcelView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GGXSwiftExtension: 3aebdd5e98bb4ff6edb1916db09c1a2952c55d5c
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  ReachabilitySwift: 7f151ff156cea1481a8411701195ac6a984f4979
+  RxCocoa: f5609cb4637587a7faa99c5d5787e3ad582b75a4
+  RxRelay: 4151ba01152436b08271e08410135e099880eae5
+  RxSwift: b9a93a26031785159e11abd40d1a55bcb8057e52
+  SnapKit: d612e99e678a2d3b95bf60b0705ed0a35c03484a
+  ZKBaseSwiftProject: 85c616a87fc7737c0b94f555de51796b5925591d
+  ZKRecordExcelView: 3040d5e0a23f8d4163a42b0807c4f5955a8f943e
+
+PODFILE CHECKSUM: 83c39e90b099b1f1661eed90a3477f52fe221871
+
+COCOAPODS: 1.15.0

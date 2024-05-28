@@ -1,0 +1,6 @@
+framework module Pods_ZKRecordExcelView_Example {
+  umbrella header "Pods-ZKRecordExcelView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '13.0'
+
+target 'ZKRecordExcelView_Example' do
+  pod 'ZKRecordExcelView', :path => '../'
+
+#  pod 'ZKBaseSwiftProject', :path => '~/Documents/GitHub/ZKBaseSwiftProject' # 工程基础类
+  target 'ZKRecordExcelView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

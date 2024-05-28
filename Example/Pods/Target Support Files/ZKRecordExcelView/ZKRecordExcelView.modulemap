@@ -1,0 +1,6 @@
+framework module ZKRecordExcelView {
+  umbrella header "ZKRecordExcelView-umbrella.h"
+
+  export *
+  module * { export * }
+}
