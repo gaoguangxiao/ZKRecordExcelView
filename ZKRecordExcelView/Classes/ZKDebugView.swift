@@ -82,6 +82,10 @@ public class ZKDebugView: ZKBaseView, ZKDebugTimerProtocol {
         return tV
     }()
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     public override func setUpView() {
         addSubview(closeBtn)
         addSubview(shareBtn)
@@ -127,6 +131,18 @@ public class ZKDebugView: ZKBaseView, ZKDebugTimerProtocol {
         //拖曳视图
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(gesture: )))
         self.addGestureRecognizer(panGesture)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(notificationViewOpetation), name: Notification.Name("Debug_RecordClick"), object: nil)
+    }
+    
+    @objc func notificationViewOpetation() {
+        
+        if self.isHidden {
+            removeView()
+            self.isHidden = false
+        } else {
+            self.isHidden = true
+        }
     }
     
     @objc func handlePanGesture(gesture: UIPanGestureRecognizer) {
@@ -167,7 +183,7 @@ public class ZKDebugView: ZKBaseView, ZKDebugTimerProtocol {
         }
         vcc?.present(activityViewController, animated: true, completion: nil)
     }
-    
+
     @objc func removeView() {
         self.textView.isHidden = true
         self.closeBtn.isHidden = true
@@ -207,6 +223,7 @@ public class ZKDebugView: ZKBaseView, ZKDebugTimerProtocol {
         viewController.view.addSubview(self)
         self.removeView()
         self.layer.cornerRadius = 10
+        self.isHidden = true
     }
     
     ///开始一次log
